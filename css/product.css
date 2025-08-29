@@ -1,0 +1,72 @@
+.main {
+    background:  var(--bg1);
+  }
+  
+
+    .bi-check-circle-fill{
+        color:var(--pink);
+
+    }
+
+    /* Make nav-pills text color black */
+.nav-pills .nav-link {
+    color: black !important; /* Ensures text stays black */
+}
+
+/* Ensure active tab text remains black */
+.nav-pills .nav-link.active {
+    color: #fff !important;
+}
+
+
+
+        .nav-pills {
+            display: flex;
+            gap: 15px;
+        }
+        
+        /* Center thumbnails */
+        .nav-pills.justify-content-center {
+            text-align: center;
+        }
+        
+        /* Styling for thumbnail images */
+        .navg {
+            width: 60px;
+            height: 50px;
+            /* border-radius: 50%; */
+            cursor: pointer;
+            padding: 1px;
+             object-fit: cover;
+            gap: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Main image styling */
+        .first{
+            width: 350px;
+            height:380px;
+            object-fit: cover;
+            background:#fff;
+            padding:10px;
+        }
+        .pincode-input,
+        .custom-btn {
+          margin: 0 !important;
+          border-radius: 0;
+          height: 45px;
+        }
+
+          .custom-btn {
+            background-color:var(--pink);
+            color:var(--white);
+            height: 45px;
+            border-radius:0;
+            border: 1px solid var(--pink);
+          }
+          
+          .custom-btn:hover {
+            background-color: transparent !important;
+            border: 1px solid var(--pink);
+            color:var(--pink);
+          }
