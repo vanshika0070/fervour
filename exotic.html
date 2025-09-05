@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/x-icon" href="images/fe-ico.webp">
+    <title>Fervour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+
+    <link rel="stylesheet" href="css/docs.theme.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.js"></script>
+    
+<link rel="stylesheet" href="css/filters.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+
+
+
+
+    <title>jQuery UI Slider - Range Slider</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<style>
+</style>
+</head>
+<body>
+	<div class="container-fluid pages-bg p-0">
+		<header class="header fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-body-main ">
+			    <div class="container ms-auto p-1">
+			 
+			<!-- Logo -->
+				   <div class="col-lg-2 col-6 col-md-3 logo-box">
+					 <a href="index.html"><span class="logo text-start"></span></a>
+				   </div>
+			 
+				   <!-- user & cart -->
+				   <div class="col-lg-2 col-3 col-md-7 order-lg-2 text-end d-none d-lg-block">			
+					  <button type="button" class="btn  btn-icons " data-bs-toggle="modal" 
+					  data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-person"></i></button>
+				   
+					  <a href="cart.html" class=""><button type="button" class="btn btn-icons " data-bs-whatever="@getbootstrap"><i class="bi bi-cart3"></i></button></a>	
+				   </div>
+			 
+			<!-- Navbar -->
+			<div class="col-lg-8 col-2 col-md-2">
+			    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+	   
+			  <div class="offcanvas offcanvas-end d-lg-none" id="offcanvasNavbar">
+				<div class="offcanvas-header">
+				    <h5 class="text-white">Menu</h5>
+				    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+				</div>
+				<div class="offcanvas-body">
+				    <ul class="navbar-nav ms-auto">
+				    <li class="nav-item py-1 pb-2">
+					   <a class="nav-link" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link " href="allcat.html">All Categories</a>
+					</li>
+					<hr>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="flowersall.html">Flowers</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="plants.html">Plants</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="occasion-main.html">Occasion</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="arrangement.html">Arrangement</a>
+					</li>
+                    <li class="nav-item py-1 pb-2">
+					   <a class="nav-link active" href="exotic.html">Exotic</a>
+					</li>
+					<hr>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">My Orders</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="cart.html">My Cart</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">My Wishlist</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">My Account</a>
+					</li>
+					<hr>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">Legal</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">Log Out</a>
+					</li>
+				    </ul>
+				    
+					<div class="formcon">
+				       	<form class="2M8cLY header-form-search " action="/search" method="get">
+									    <input class="formControl" type="text" title="Search for products, brands and more"
+										name="q" autocomplete="off" placeholder="Search" value="" fdprocessedid="7nhsjo">
+									   </svg><input type="hidden" name="otracker" value="search"><input type="hidden"
+										  name="otracker1" value="search"><input type="hidden" name="marketplace"
+										  value="FLIPKART"><input type="hidden" name="as-show" value="on">
+									   <input type="hidden" name="as" value="off">
+						</form>
+					 </div>
+				</div>
+				
+			  </div>
+				    
+							 <!-- Desktop Navbar -->
+							 <div class="collapse navbar-collapse d-none d-lg-block  me-3">
+								<div class="formcon d-none d-lg-block">
+									<form class="2M8cLY header-form-search " action="/search" method="get">
+									    <input class="formControl" type="text" title="Search for products, brands and more"
+										name="q" autocomplete="off" placeholder="Search" value="" fdprocessedid="7nhsjo">
+									   </svg><input type="hidden" name="otracker" value="search"><input type="hidden"
+										  name="otracker1" value="search"><input type="hidden" name="marketplace"
+										  value="FLIPKART"><input type="hidden" name="as-show" value="on">
+									   <input type="hidden" name="as" value="off">
+								    </form>
+							   </div>
+							 </div>
+				    </div>  
+				</div>
+			 </nav>
+		</header>
+	
+	 <!-- modals -->
+		  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+			    <div class="modal-content bg-black py-3">
+				   <div class="modal-header p-0 ms-0 pb-3 border-1 border-bottom border-white">
+					  <h6>Login</h6>
+				   </div>
+				   <div class="modal-body">
+							<form>
+							    <div class="mb-3">
+								   <input type="text" name="uname" placeholder="Enter Email"
+									  onblur="return validateForm()" required>
+								   <span id="errorContact">
+	
+								   <input type="text" placeholder="Enter Password" name="psw" required>
+								   <br><br>
+								   <input type="submit" value="Login">
+								   <input type="button" value="Cancel" data-bs-dismiss="modal">
+							    </div>
+							</form>
+				   </div>
+				   <div class="modal-footer">
+					  <span class="signIn"><a href="#">Sign-in</a></span>
+				   </div>
+			    </div>
+			</div>
+		 </div>   
+      
+         
+
+         <!-- nav-pics with names            -->
+			<div class="section-nav mt-5 bg-black d-none d-md-block">
+				<nav class="navbar navbar-expand-md text-center">
+					<div class="container mt-4 py-1">
+						<ul class="navbar-nav row w-100">
+							<div class="col col-3">
+								<li class="nav-item">
+										  <div class="container">
+											 <a href="flowersall.html">
+											 <img src="images/1nav.webp"
+												class="heading" alt="">
+											 </a>    
+										  </div>
+										  <a class="nav-link " href="flowersall.html" role="button" >Flowers</a>
+								</li>
+						     </div>
+							<div class="col col-3">
+								<li class="nav-item">
+										  <div class="container">
+											 <a href="plants.html">
+											 <img src="images/2nav.webp"
+												class="heading" alt="">
+												</a>
+										  </div>
+										  <a class="nav-link" href="plants.html" role="button">Plants</a>
+								</li>
+							</div>
+							<div class="col col-3">
+								<li class="nav-item"> 
+										  <div class="container">
+											 <a href="occasion-main.html">
+											 <img src="images/3nav.webp"
+												class="heading" alt="">
+											 </a>    
+										  </div>
+										  <a class="nav-link" href="occasion-main.html" role="button" >Occasion</a>										 
+							     </li>
+							</div>
+							<div class="col col-3">
+								<li class="nav-item">
+										  <div class="container">
+												 <a href="arrangement.html">
+									                    <img src="images/4nav.webp"
+										                  class="heading" alt="">
+									                </a>
+									       </div>
+										  <a class="nav-link text-center" href="arrangement.html" role="button">Arrangement</a>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</nav>
+			</div>
+            
+           
+              
+        	<!-- mobile-nav  -->
+			<div class="section py-2 p-1 bg-black mt-5 d-block d-md-none text-white text">
+					<div class="container p-0 ms-2">
+					    <section id="demos">
+						   <div class="large-12 columns">
+							  <div class="owl-carousel owl-theme1 py-4 pb-0 p-0" id="carousel1">
+									<div class="col col-10">
+									    <div class="nav-item">
+										   <div class="container">
+											  <a href="flowersall.html">
+												 <img src="https://i.pinimg.com/564x/3d/67/7c/3d677cb2fcc2afeb24c364b472b018a3.jpg"
+													class="heading" alt="">
+												 </a>    
+										   </div>
+										   <a class="nav-link text-center active" href="flowersall.html" role="button"
+											   aria-expanded="false">Flowers</a>
+									    </div>
+									</div>
+									<div class="col col-10">
+									    <div class="nav-item">
+										   <div class="container">
+											  <a href="plants.html">
+												 <img src="https://i.pinimg.com/564x/71/25/5e/71255e8470797c13a197588e6b0bcdd1.jpg"
+													class="heading" alt="">
+													</a>
+										   </div>
+										   <a class="nav-link text-center" href="plants.html" role="button"
+											   aria-expanded="false">Plants</a>
+									    </div>
+									</div>  
+									<div class="col col-10">
+									    <div class="nav-item">
+										   <div class="container">
+											  <a href="occasion-main.html">
+												 <img src="https://i.pinimg.com/736x/33/44/94/3344941dd0554c8ff88a30935fe81c02.jpg"
+													class="heading" alt="">
+												 </a>    
+										   </div>
+										   <a class="nav-link text-center" href="occasion-main.html" role="button"
+											   aria-expanded="false">Occasion</a>
+									    </div>
+									</div>
+									<div class="col col-10">
+									    <div class="nav-item">
+											  <div class="container">
+												<a href="arrangement.html">
+											  <img src="https://i.pinimg.com/736x/c7/ae/31/c7ae3157763565525f72d95631b097cd.jpg"
+												 class="heading" alt="">
+											  </a>
+											  </div>
+											  <a class="nav-link text-center" href="arrangement.html" role="button"
+												  aria-expanded="false">Arrangement</a>
+										   </div>
+									</div>                                                                
+							  </div>
+						   </div>
+					</section>
+					</div>	
+			 </div>
+
+
+             
+      
+      
+       <!-- breadcrumb -->
+           <div class="container py-3">
+              <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-primary"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Exotic</li>
+                  </ol>
+                </nav>
+           </div>
+                  
+
+        
+        <div class="container-fluid py-2">
+            <div class="container text-left">
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-lg-2">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg- g-3">
+                            <div class="col col-lg-4 col-md-6">
+                                        <div class="card btn-cardlink">
+                                            <img src="images/product (21).webp" class="card-img-top" alt="...">
+                                  
+                                            <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+                                            <div class="card-body">
+                                                    <h5 class="card-title">Calla Lily</h5>
+                                                      <p class="card-text"><span>&#8377</span>859</p>
+                                                      <button type="button" class="btn btn-add">Add To Cart</button>
+
+                                            </div>
+                                        </div>
+                            </div>                                 
+                                    <div class="col col-12 col-lg-4 col-md-6">
+                                                <div class="card  btn-cardlink">
+                                                    <img src="images/product (24).webp" class="card-img-top" alt="...">    
+                                                    <div class="wrapper">
+                                              <div class="icon-wishlist"></div>	
+                                              <div class="popover"></div>					   
+                                          </div>	
+                                                    <div class="card-body">
+                                                            <h5 class="card-title">Yellow Tulips</h5>
+                                                            <p class="card-text"><span>&#8377</span>849</p> 
+                                                             <button type="button" class="btn btn-add">Add To Cart</button>       
+                                                    </div>
+                                                </div>
+                                    </div>                                           
+                                    <div class="col col-lg-4 col-md-6">
+                                                <div class="card btn-cardlink">
+                                                    <img src="images/product (20).webp" class="card-img-top" alt="...">
+
+                                                    <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+                                                    <div class="card-body">
+                                                            <h5 class="card-title">Blue Roses</h5>
+                                                              <p class="card-text"><span>&#8377</span>899</p>
+                                                              <button type="button" class="btn btn-add">Add To Cart</button>      
+
+                                                    </div>
+                                                </div>
+                                    </div>  
+                            <div class="col col-lg-4 col-md-6">
+                                        <div class="card btn-cardlink">
+                                            <img src="images/product (5).webp" class="card-img-top" alt="...">
+	
+                                            <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+                                            <div class="card-body">
+                                                    <h5 class="card-title">Liles</h5>
+                                                      <p class="card-text"><span>&#8377</span>599</p>
+                                                      <button type="button" class="btn btn-add">Add To Cart</button>
+
+                                            </div>
+                                        </div>
+                            </div>      
+                            <div class="col col-lg-4 col-md-6">
+                                        <div class="card btn-cardlink">
+                                    	    <img src="images/product (12).webp" class="card-img-top" alt="...">
+							
+                                            <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+                                            <div class="card-body">
+                                                    <h5 class="card-title">Blossoming Illusion</h5>
+                                                      <p class="card-text"><span>&#8377</span>789</p>
+                                                      <button type="button" class="btn btn-add">Add To Cart</button>
+
+                                            </div>
+                                        </div>
+                            </div>  
+                            <div class="col col-lg-4 col-md-6">
+                                        <div class="card btn-cardlink">
+                                            <img src="images/product (6).webp" class="card-img-top" alt="...">    
+                                             
+                                            <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+                                            <div class="card-body">
+                                                    <h5 class="card-title">Yellow Roses</h5>
+                                                      <p class="card-text"><span>&#8377</span>599</p>
+                                                      <button type="button" class="btn btn-add">Add To Cart</button>
+
+                                            </div>
+                                        </div>
+                                    </div>  
+                            <div class="col col-lg-4 col-md-6">
+                                <div class="card btn-cardlink">
+                                    <img src="images/product (9).webp" class="card-img-top" alt="...">   
+                                                
+                                            <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+                                            <div class="card-body">
+                                                    <h5 class="card-title">Carnations</h5>
+                                                      <p class="card-text"><span>&#8377</span>859</p>
+                                                      <button type="button" class="btn btn-add">Add To Cart</button>
+
+                                            </div>
+                                        </div>
+                            </div>                                                                    
+                        </div>
+
+                    </div>
+                            
+                    <div class="col col-lg-3">
+                        <div class="container d-none d-lg-block p-1">
+                             <div class="card-header py-1 pb-1  border-1 border border-dark">
+                                 <h3>Filters</h3>
+                             </div>
+                            <div class="row">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header  border-1 border border-dark" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                          Price
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body  border-1 border border-dark">
+                                            <div class="" style="height:230px;">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <label for="amount">Price Range:</label>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <div id="slider-range" style="height: 10px;"></div>
+                                                        </div>
+                                                        <div class="col-6 mt-3">
+                                                            <label for="min-price">Min:</label>
+                                                            <input type="number" id="min-price" class="form-control" value="299">
+                                                        </div>
+                                                        <div class="col-6 mt-3">
+                                                            <label for="max-price">Max:</label>
+                                                            <input type="number" id="max-price" class="form-control" value="2500">
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="button btn-apply disabled">Apply</button>   
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                               
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header  border-1 border border-dark" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            Categories
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body  border-1 border border-dark">
+                                            <form>
+                                                <div class="col" id="">
+                                                    <div class="" style="height:260px;">
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="category1" value="option1">
+                                                            <label class="form-check-label" for="category1">Bouquets</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="category2" value="option2">
+                                                            <label class="form-check-label" for="category2">Plants</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="category3" value="option3">
+                                                            <label class="form-check-label" for="category3">Hampers</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="category4" value="option2">
+                                                            <label class="form-check-label" for="category4">Flowering Plants</label>
+                                                        </div> 
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="category5" value="option2">
+                                                            <label class="form-check-label" for="category5">Baskets</label>
+                                                        </div>                                                        
+                                                        <button type="button" class="button btn-apply">Apply</button>   
+                                                    </div>
+                                                </div>                                       
+                                            </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header border-1 border border-dark" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            Occasion
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body  border-1 border border-dark">
+                                            <form>
+                                                <div class="col" id="">
+                                                    <div class="" style="height:250px;">
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion1" value="option1">
+                                                            <label class="form-check-label" for="occasion1">Wedding</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion2" value="option2">
+                                                            <label class="form-check-label" for="occasion2">Birthday's</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion3" value="option3">
+                                                            <label class="form-check-label" for="occasion3">Anniversary</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion4" value="option3">
+                                                            <label class="form-check-label" for="occasion4">Sympathy</label>
+                                                        </div>                                                        
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion5" value="option1">
+                                                            <label class="form-check-label" for="occasion5">Funerals</label>
+                                                        </div>
+                                                        <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion6" value="option1">
+                                                            <label class="form-check-label" for="occasion6">Congratulations</label>
+                                                        </div>  <div class="form-check form-check">
+                                                            <input class="form-check-input" type="checkbox" id="occasion7" value="option1">
+                                                            <label class="form-check-label" for="occasion7">Others</label>
+                                                        </div>
+                                                        <button type="button" class="button btn-apply">Apply</button>  
+                                                    </div>
+                                                </div>                                            
+                                            </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>                
+                        </div>              
+                </div>    
+            </div>
+        </div>    
+    </div>
+
+   
+<!-- footer -->
+<footer class="footer-section border-1 border-bottom border-top border-white  bg-black p-3 mb-5 mt-5">
+<div class="container ">
+<div class="row ">                        
+   <div class="col-6 col-md-6 col-lg-4  ">
+      <div class="col-6 col-md-6  text-start ">
+         <a href="javascript:void(0)"><img src="images/fe.png" alt=""></a>
+      </div>
+   </div>
+   <div class="col-6 col-md-6 col-lg-4 py-2 pb-0 text-md-start d-flex justify-content-end py-2 gap-2 order-lg-2 ">
+    <a href="javascript:void(0)"> <i class="bi bi-facebook footer-icon"></i></a>
+    <a href="javascript:void(0)"> <i class='bi bi-instagram footer-icon'></i></a>
+    <a href="javascript:void(0)"> <i class="bi bi-pinterest footer-icon"></i></a>
+ </div>  
+   <div class="col col-12 col-lg-4 py-2 text-center  text-white ">
+         ©2023 <a href=" index.html" class="bottomtag">fervour.com</a> All rights reserved.
+    </div>				                            
+</div>
+</div> 
+</footer>	
+
+<!-- fixed bottom -->
+
+<div class="section bg-black fixed-bottom d-block d-lg-none pb-0" style="z-index: 1;">
+<div class="row text-center">
+<!-- Filter -->
+<button type="button" class="col col-6 border border-1 border-light btn btn-icons py-3"
+data-bs-toggle="modal" data-bs-target="#exampleModal5" data-bs-whatever="@getbootstrap">
+<i class="bi bi-funnel-fill"></i> Filters
+</button>
+<!-- Sort -->
+<button type="button" class="col col-6 border border-1 border-light btn btn-icons py-3"
+data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="@getbootstrap">
+<i class="bi bi-sort-up"></i> Sort
+</button>
+</div>
+</div></div>
+
+
+<!-- filter md -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+<div class="modal-content py-3">
+    <div class="modal-header d-flex text-start">
+        <h6>Filters</h6>
+        <button type="button" class="btn-close btn-close-white me-1" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div> 
+    <hr>
+    <div class="modal-body">
+        <div class="d-flex text-start">
+            <div class="nav flex-column nav-pills ms-1" id="filter-tabs" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active pb-2 py-2 " id="price-tab" data-bs-toggle="pill" data-bs-target="#price-filter" type="button" role="tab">Price</button>
+                <hr>
+                <button class="nav-link pb-2 py-2" id="category-tab" data-bs-toggle="pill" data-bs-target="#category-filter" type="button" role="tab">Categories</button>
+                <hr>
+                <button class="nav-link pb-2 py-2" id="occasion-tab" data-bs-toggle="pill" data-bs-target="#occasion-filter" type="button" role="tab">Occasion</button>
+            </div>
+
+            <div class="tab-content ms-3 active text-white" id="filter-tabs-content">
+                <!-- Price Filter -->
+                <div class="tab-pane fade show active text-start" id="price-filter" role="tabpanel" aria-labelledby="price-tab">
+                            <div class="form-check form-check ">
+                                    <input class="form-check-input" type="checkbox" id="price1" value="option1">
+                                    <label class="form-check-label text-white"  for="price1"><span>&#8377</span>0-999</label>
+                                 </div>
+                                 <br>
+                                  <div class="form-check form-check">
+                                       <input class="form-check-input" type="checkbox" id="price2" value="option2">
+                                       <label class="form-check-label text-white"  for="price2"><span>&#8377</span>1000-1999</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                       <input class="form-check-input" type="checkbox" id="price3" value="option3">
+                                       <label class="form-check-label text-white"  for="price3"><span>&#8377</span>2000-2499</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                       <input class="form-check-input" type="checkbox" id="price4" value="option3">
+                                       <label class="form-check-label text-white"  for="price4"><span>&#8377</span>2500-3499</label>
+                                  </div>                                                        
+                                  <br>
+                                  <div class="form-check form-check">
+                                       <input class="form-check-input" type="checkbox" id="price5" value="option1">
+                                       <label class="form-check-label text-white"  for="price5"><span>&#8377</span>3500-3999</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="price6" value="option1">
+                                        <label class="form-check-label text-white " for="price6"><span>&#8377</span>4000-5000</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                    <input class="form-check-input" type="checkbox" id="price7" value="option1">
+                                    <label class="form-check-label text-white"  for="price7"><span>&#8377</span>5001-10000</label>
+                                  </div>
+                                   <br>
+                                  <div class="form-check form-check">
+                                    <input class="form-check-input" type="checkbox" id="price8" value="option1">
+                                    <label class="form-check-label text-white"  for="price8"><span>&#8377</span>10001-20000</label>
+                                  </div>
+                                  <button type="button" class="button btn-apply" data-bs-dismiss="" aria-label="Close">Apply</button>                                                                                                                                
+                            </div>
+                             
+                    <!-- Categories Filter -->
+                            <div class="tab-pane fade" id="category-filter" role="tabpanel" aria-labelledby="category-tab">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category1" value="Flowers">
+                                    <label class="form-check-label" for="category1">Bouquets</label>
+                                </div>
+                                <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category2" value="Plants">
+                                    <label class="form-check-label" for="category2">Plants</label>
+                                </div>
+                                <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category3" value="Flowers">
+                                    <label class="form-check-label" for="category3">Hampers</label>
+                                </div>
+                                <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category4" value="Plants">
+                                    <label class="form-check-label" for="category4">Flowering Plants</label>
+                                </div>
+                                <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category5" value="Plants">
+                                    <label class="form-check-label" for="category5">Basket</label>
+                                </div>
+                                <button type="button" class="button btn-apply">Apply</button>  
+                            </div>
+                            
+                            <!-- Occasion Filter -->
+                            <div class="tab-pane fade" id="occasion-filter" role="tabpanel" aria-labelledby="occasion-tab">
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion1" value="option1">
+                                        <label class="form-check-label" for="occasion1">Wedding</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion2" value="option2">
+                                        <label class="form-check-label" for="occasion2">Birthday's</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion3" value="option3">
+                                        <label class="form-check-label" for="occasion3">Anniversary</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion4" value="option2">
+                                        <label class="form-check-label" for="occasion4">Sympathy</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion5" value="option3">
+                                        <label class="form-check-label" for="occasion5">Funerals</label>
+                                  </div> 
+                                  <br>                                                       
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion6" value="option1">
+                                        <label class="form-check-label" for="occasion6">Congratulations</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check">
+                                        <input class="form-check-input" type="checkbox" id="occasion7" value="option1">
+                                        <label class="form-check-label" for="occasion7">Others</label>
+                                  </div>
+                                  <button type="button" class="button btn-apply">Apply</button> 
+                            </div>
+                        </div>
+                </div>                                                
+            </div>                                            
+</div>
+</div>
+</div>
+
+<!-- sort md -->                            
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content bg-black py-3">
+            <div class="modal-header m-0 border-1 border-bottom border-white p-0">
+                <h6>Sort</h6>
+            </div>     
+            <div class="modal-body p-3">
+                <form>
+                    <div class="form-check text-start">
+                        <input class="form-check-input text-start" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label text-white" for="flexRadioDefault1">Recommended</label>
+                    </div>
+                    <div class="form-check text-start">
+                        <input class="form-check-input text-start" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label text-white" for="flexRadioDefault2">New</label>
+                    </div>                                               
+                    <div class="form-check text-start">
+                        <input class="form-check-input text-start" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label text-white" for="flexRadioDefault3">Low to high</label>
+                    </div>
+                    <div class="form-check text-start">
+                        <input class="form-check-input text-start" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                        <label class="form-check-label text-white" for="flexRadioDefault4">High to low</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>                               
+</div>
+                            
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/navcarousel.js"></script>
+<script src="js/range.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/style.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+
+.form-control::placeholder{
+     color: rgba(0, 0, 0, 0.6);
+ }
+
+
+ .form-control {
+     border-radius: 0px;
+     max-width: auto;
+     border: 1px solid #000;
+     width:100%;
+      height: 45px; 
+ } 
+
+ .form-select {
+     border-radius: 0px;
+     max-width: auto;
+     width:100%;
+      height: 45px; 
+     border: 1px solid #000;
+ }
+
+ 
+.form-select::placeholder{
+     color: rgba(0, 0, 0, 0);
+ }
+
+ .form-controlp {
+            transition: none;
+            width: 100%;
+            border: 1px solid var(--black);
+            max-width: 100%;
+            border: 1px solid #000;
+        }
+
+        .form-controlp::placeholder {
+     color: rgba(0, 0, 0, 0.6);
+         padding: 0 0 0 20px;
+ }
+
+
+      .card-cart{
+            text-align: center;
+            display: flex;
+            border-radius: 0;
+            cursor: pointer;
+            padding: 100px 30px;
+            position: absolute;
+            text-align: center;
+            background: var(--white);
+            padding: 6px 5px 0 7px;
+            transition: all 0.5s;
+            height:auto;
+            /* width:350px;        */
+            display: flex;
+            word-wrap: break-word;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            background-clip: border-box;
+        }
+
+        .card-header{
+            font-weight: bold;
+        }
+
+
+        .btn-total{
+          border-radius: 100px;
+          padding:7px 8px 0px 8px;
+          position: absolute;
+          top: 2%;
+          right:2%;
+      } 
+ 
+ .btn-badge {
+     background-color: var(--pink) !important;
+     border: none;
+     color: #fff;
+     border-radius: 0px;
+     padding: 5px 10px;
+     position: absolute;
+     right: 10px; /* Positioning the button to the right */
+ }
+
+
+ a{color: var(--pink);}

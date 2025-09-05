@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/x-icon" href="images/fe-ico.webp">
+    <title>Fervour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+
+    <link rel="stylesheet" href="css/docs.theme.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.js"></script>
+    
+<link rel="stylesheet" href="css/filters.css">
+<link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+
+    <title>jQuery UI Slider - Range Slider</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <style>
+      .container-fluid {
+    box-sizing: border-box; /* Makes padding & border stay within total width */
+    overflow: hidden;       /* Useful if you position inner elements */
+  }
+  
+</style>
+
+</head>
+
+<body>
+        <div class="container-fluid pages-bg p-0">
+            <header class="header fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-body-main ">
+                    <div class="container ms-auto p-1">
+                 
+                <!-- Logo -->
+                       <div class="col-lg-2 col-6 col-md-3 logo-box">
+                         <a href="index.html"><span class="logo text-start"></span></a>
+                       </div>
+                 
+                       <!-- user & cart -->
+                       <div class="col-lg-2 col-3 col-md-7 order-lg-2 text-end d-none d-lg-block">			
+                          <button type="button" class="btn  btn-icons " data-bs-toggle="modal" 
+                          data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-person"></i></button>
+                       
+                          <a href="cart.html" class=""><button type="button" class="btn btn-icons " data-bs-whatever="@getbootstrap"><i class="bi bi-cart3"></i></button></a>	
+                       </div>
+                 
+                <!-- Navbar -->
+                <div class="col-lg-8 col-2 col-md-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+           
+                  <div class="offcanvas offcanvas-end d-lg-none" id="offcanvasNavbar">
+				<div class="offcanvas-header">
+				    <h5 class="text-white">Menu</h5>
+				    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+				</div>
+				<div class="offcanvas-body">
+				    <ul class="navbar-nav ms-auto">
+				    <li class="nav-item py-1 pb-2">
+					   <a class="nav-link" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link " href="allcat.html">All Categories</a>
+					</li>
+					<hr>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="flowersall.html">Flowers</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="plants.html">Plants</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="occasion-main.html">Occasion</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="arrangement.html">Arrangement</a>
+					</li>
+                    <li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="exotic.html">Exotic</a>
+					</li>
+					<hr>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">My Orders</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="cart.html">My Cart</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">My Wishlist</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">My Account</a>
+					</li>
+					<hr>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">Legal</a>
+					</li>
+					<li class="nav-item py-1 pb-2">
+					   <a class="nav-link" href="#">Log Out</a>
+					</li>
+				    </ul>
+				    
+					<div class="formcon">
+						   <form class="2M8cLY header-form-search " action="/search" method="get">
+									    <input class="formControl" type="text" title="Search for products, brands and more"
+										name="q" autocomplete="off" placeholder="Search" value="" fdprocessedid="7nhsjo">
+									   </svg><input type="hidden" name="otracker" value="search"><input type="hidden"
+										  name="otracker1" value="search"><input type="hidden" name="marketplace"
+										  value="FLIPKART"><input type="hidden" name="as-show" value="on">
+									   <input type="hidden" name="as" value="off">
+						   </form>
+					 </div>
+				</div>
+                    
+                  </div>
+                        
+                                 <!-- Desktop Navbar -->
+                                 <div class="collapse navbar-collapse d-none d-lg-block  me-3">
+                                    <div class="formcon d-none d-lg-block">
+                                        <form class="2M8cLY header-form-search " action="/search" method="get">
+                                            <input class="formControl" type="text" title="Search for products, brands and more"
+                                            name="q" autocomplete="off" placeholder="Search" value="" fdprocessedid="7nhsjo">
+                                           </svg><input type="hidden" name="otracker" value="search"><input type="hidden"
+                                              name="otracker1" value="search"><input type="hidden" name="marketplace"
+                                              value="FLIPKART"><input type="hidden" name="as-show" value="on">
+                                           <input type="hidden" name="as" value="off">
+                                        </form>
+                                   </div>
+                                 </div>
+                        </div>  
+                    </div>
+                 </nav>
+            </header>
+        
+         <!-- modals -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+                    <div class="modal-content bg-black py-3">
+                       <div class="modal-header p-0 ms-0 pb-3 border-1 border-bottom border-white">
+                          <h6>Login</h6>
+                       </div>
+                       <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                       <input type="text" name="uname" placeholder="Enter Email"
+                                          onblur="return validateForm()" required>
+                                       <span id="errorContact">
+        
+                                       <input type="text" placeholder="Enter Password" name="psw" required>
+                                       <br><br>
+                                       <input type="submit" value="Login">
+                                       <input type="button" value="Cancel" data-bs-dismiss="modal">
+                                    </div>
+                                </form>
+                       </div>
+                       <div class="modal-footer">
+                          <span class="signIn"><a href="#">Sign-in</a></span>
+                       </div>
+                    </div>
+                </div>
+             </div> 
+        
+      
+                                  
+           <!-- nav-pics with names            -->
+			<div class="section-nav mt-5 bg-black d-none d-md-block">
+				<nav class="navbar navbar-expand-md text-center">
+					<div class="container mt-4 py-1">
+						<ul class="navbar-nav row w-100">
+							<div class="col col-3">
+								<li class="nav-item">
+										  <div class="container">
+											 <a href="flowersall.html">
+											 <img src="images/1nav.webp"
+												class="heading" alt="">
+											 </a>    
+										  </div>
+										  <a class="nav-link " href="flowersall.html" role="button" >Flowers</a>
+								</li>
+						     </div>
+							<div class="col col-3">
+								<li class="nav-item">
+										  <div class="container">
+											 <a href="plants.html">
+											 <img src="images/2nav.webp"
+												class="heading" alt="">
+												</a>
+										  </div>
+										  <a class="nav-link" href="plants.html" role="button">Plants</a>
+								</li>
+							</div>
+							<div class="col col-3">
+								<li class="nav-item"> 
+										  <div class="container">
+											 <a href="occasion-main.html">
+											 <img src="images/3nav.webp"
+												class="heading" alt="">
+											 </a>    
+										  </div>
+										  <a class="nav-link" href="occasion-main.html" role="button" >Occasion</a>										 
+							     </li>
+							</div>
+							<div class="col col-3">
+								<li class="nav-item">
+										  <div class="container">
+												 <a href="arrangement.html">
+									                    <img src="images/4nav.webp"
+										                  class="heading" alt="">
+									                </a>
+									       </div>
+										  <a class="nav-link text-center" href="arrangement.html" role="button">Arrangement</a>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+            
+
+
+				
+			<!-- mobile-nav  -->
+			<div class="section py-2 p-1 bg-black mt-5 d-block d-md-none text-white text">
+					<div class="container p-0 ms-2">
+					   
+					</div>	
+			 </div>
+	 
+          
+          
+           <!-- breadcrumb -->
+               <div class="container py-3">
+                  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item text-primary"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pink Rose Bouquet</li>
+                      </ol>
+                    </nav>
+               </div>
+            
+           
+
+
+               <div class="container-fluid">
+                  <div class="container">
+                      <div class="row">
+                          <!-- Desktop View (lg and above) -->
+                          <div class="col-12 col-lg-5 d-none d-lg-block">
+                              <div class="d-flex align-items-center">
+                                  <!-- Thumbnail Navigation -->
+                                  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                      <button class="nav-link active" id="v-pills-rose1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rose1" type="button" role="tab" aria-controls="v-pills-rose1" aria-selected="true">
+                                           <img src="images/product (1).webp" alt="Pink Roses 1" class="navg">
+                                      </button>
+                                      <button class="nav-link" id="v-pills-rose2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rose2" type="button" role="tab" aria-controls="v-pills-rose2" aria-selected="false">
+                                          <img src="images/product (1) (1).webp" alt="Pink Rose" class="navg">
+                                      </button>
+                                      <button class="nav-link" id="v-pills-rose3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rose3" type="button" role="tab" aria-controls="v-pills-rose3" aria-selected="false">
+                                          <img src="images/1nav.webp" alt="Pink Rose 3" class="navg">
+                                      </button>
+                                  </div>
+                                  <!-- Main Image Display -->
+                                  <div class="tab-content" id="v-pills-tabContent">
+                                      <div class="tab-pane fade show active" id="v-pills-rose1" role="tabpanel" aria-labelledby="v-pills-rose1-tab">
+                                          <img src="images/product (1).webp" alt="Pink Roses 1" class="first">
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-rose2" role="tabpanel" aria-labelledby="v-pills-rose2-tab">
+                                          <img src="images/product (1) (1).webp" alt="Pink Rose" class="first">
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-rose3" role="tabpanel" aria-labelledby="v-pills-rose3-tab">
+                                          <img src="images/1nav.webp" alt="Pink Rose 3" class="first">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+              
+                          <!-- Mobile View (Below lg) -->
+                          <div class="col-12 col-lg-7 py-3 d-lg-none">
+                              <!-- Main Image Display for Mobile -->
+                              <div class="tab-content text-center" id="pills-tabContent">
+                                  <div class="tab-pane fade show active" id="pills-rose1" role="tabpanel" aria-labelledby="pills-rose1-tab">
+                                       <img src="images/product (1).webp" alt="Pink Roses 1" class="first">
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-rose2" role="tabpanel" aria-labelledby="pills-rose2-tab">
+                                      <img src="images/product (1) (1).webp" alt="Pink Rose" class="first">
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-rose3" role="tabpanel" aria-labelledby="pills-rose3-tab">
+                                      <img src="images/1nav.webp" alt="Pink Rose 3" class="first">
+                                  </div>
+                              </div>
+              
+                              <!-- Thumbnail Navigation for Mobile -->
+                              <div class="col-12">
+                                  <ul class="nav nav-pills justify-content-center mt-3" id="pills-tab" role="tablist">
+                                      <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-rose1-tab" data-bs-toggle="pill" data-bs-target="#pills-rose1" type="button" role="tab" aria-controls="pills-rose1" aria-selected="true">
+                                               <img src="images/product (1).webp" alt="Pink Roses 1" class="navg">
+                                          </button>
+                                      </li>
+                                      <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-rose2-tab" data-bs-toggle="pill" data-bs-target="#pills-rose2" type="button" role="tab" aria-controls="pills-rose2" aria-selected="false">
+                                              <img src="images/product (1) (1).webp" alt="Pink Rose" class="navg">
+                                          </button>
+                                      </li>
+                                      <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-rose3-tab" data-bs-toggle="pill" data-bs-target="#pills-rose3" type="button" role="tab" aria-controls="pills-rose3" aria-selected="false">
+                                              <img src="images/1nav.webp" alt="Pink Rose 3" class="navg">
+                                          </button>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+              
+                          <!-- Product Information Section -->
+                          <div class="col-12 col-lg-4 ">
+                              <div class="container">
+                                  <h4>Rose Bouquet</h4>
+                                  <h5 class="text-start"><span>&#8377;</span>899 (Inclusive of all taxes)</h5>
+                                  <!-- Pincode Check -->
+                                  <div class="pincode-form-container">
+                                    <div class="pincode-form-container">
+                                       <form class="d-flex flex-column flex-sm-row align-items-center">
+                                         <input type="text" class="form-control pincode-input" placeholder="Enter Pincode" maxlength="6">
+                                         <button type="submit" class="btn custom-btn">Check</button>
+                                       </form>
+                                     </div>
+                                  </div>
+                                  <p class="card-text mt-3 text-start"><i class="bi bi-check-circle-fill"></i> In stock</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+        <div class="container mt-5">
+          <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link active" id="pills-discription-tab" data-bs-toggle="pill" data-bs-target="#pills-discription" type="button" role="tab" aria-controls="pills-discription" aria-selected="true">Discription</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="false">Reviews</button>
+               </li>
+             </ul>
+             <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-discription" role="tabpanel" aria-labelledby="pills-discription-tab" tabindex="0">Soft, delicate, and effortlessly charming, each pink rose in this handcrafted bouquet tells a story of gentle love and appreciation. The blush hue of these blooms evokes feelings of warmth, sweetness, and elegance, making them the perfect gift for expressing gratitude, celebrating milestones, or simply brightening someone's day.
+                  Expertly arranged with fresh, premium-grade roses, this bouquet is wrapped with care and a touch of sophistication, making it ready to impress the moment it’s delivered. Whether it’s for a birthday, anniversary, or just because, our Pink Rose Bouquet is a beautiful way to say everything without saying a word.                 
+                  Each bouquet is thoughtfully prepared to ensure freshness and longevity, arriving in elegant packaging that reflects the quality and love behind every petal.                 
+               </div>
+               <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">No Reviews</div>
+             </div>
+        </div>
+       
+
+
+      <div class="container owlcon py-5 pb-5 p-2 align-center">
+        <h4 class="h4">Similar Products</h4>
+        <section id="flow">
+            <div class="row">
+               <div class="large-12 columns py-3 pb-0">
+                  <div class="owl-carousel owl-theme" id="flow-carousel">  
+						 <div class="item">
+							<div class="card btn-cardlink">                                           
+								<img src="images/product (2).webp" class="card-img-top" alt="...">
+								  <div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>				
+								<div class="card-body">
+									   <h5>Monstera</h5>
+									   <p class="card-text"><span>&#8377</span>400</p> 
+									    <button type="button" class="btn btn-add">Add To Cart</button>
+								</div>
+							 </div>
+						 </div>
+						 <div class="item">
+							<div class="card btn-cardlink">
+								<img src="images/product (3).webp" class="card-img-top" alt="...">
+								<div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>		
+								<div class="card-body">
+									   <h5>Pink Roses</h5>
+									   <p class="card-text"><span>&#8377</span>899</p>
+									    <button type="button" class="btn btn-add">Add To Cart</button>
+								</div>
+							 </div>
+						 </div>
+						 <div class="item">
+							<div class="card btn-cardlink">
+							    <img src="images/product (4).webp" class="card-img-top" alt="...">
+	
+								<div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+	
+							    <div class="card-body">
+									  <h5>Love Basket</h5>
+									  <p class="card-text"><span>&#8377</span>3000</p>
+									   <button type="button" class="btn btn-add">Add To Cart</button>
+							    </div>
+							</div>
+						 </div>
+						 <div class="item">
+							<div class="card btn-cardlink">
+							    <img src="images/product (5).webp" class="card-img-top" alt="...">
+	
+								<div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+	
+							    <div class="card-body">
+									  <h5>Lilies</h5>
+									  <p class="card-text"><span>&#8377</span>1399</p>
+									   <button type="button" class="btn btn-add">Add To Cart</button>
+							    </div>
+							</div>
+						 </div>                               
+						 <div class="item">
+							<div class="card btn-cardlink">
+							    <img src="images/2nav.webp" class="card-img-top" alt="...">
+	
+								<div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+							    <div class="card-body">
+									  <h5>Snake Plant</h5>
+									  <p class="card-text"><span>&#8377</span>299</p>
+									   <button type="button" class="btn btn-add">Add To Cart</button>
+							    </div>
+							</div>
+						 </div>
+						 <div class="item">
+							<div class="card btn-cardlink">
+							    <img src="images/product (6).webp" class="card-img-top" alt="...">
+	
+								<div class="wrapper">
+									<div class="icon-wishlist"></div>	
+									<div class="popover"></div>						   
+								   </div>	
+							    <div class="card-body">
+									  <h5>Yellow Roses</h5>
+									  <p class="card-text"><span>&#8377</span>700</p> 
+									   <button type="button" class="btn btn-add">Add To Cart</button>
+							    </div>
+							</div>
+						 </div>
+                  </div>
+               </div>
+            </div>
+        </section>
+     </div>
+       
+    
+    
+    
+<!-- footer -->
+<footer class="footer-section border-1 border-bottom border-top border-white  bg-black p-3 mb-5">
+    <div class="container ">
+    <div class="row ">                        
+      <div class="col-6 col-md-6 col-lg-4  ">
+         <div class="col-6 col-md-6  text-start ">
+            <a href="javascript:void(0)"><img src="images/fe.png" alt=""></a>
+         </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-4 py-2 pb-0 text-md-start d-flex justify-content-end py-2 gap-2 order-lg-2 ">
+       <a href="javascript:void(0)"> <i class="bi bi-facebook footer-icon"></i></a>
+       <a href="javascript:void(0)"> <i class='bi bi-instagram footer-icon'></i></a>
+       <a href="javascript:void(0)"> <i class="bi bi-pinterest footer-icon"></i></a>
+    </div>  
+      <div class="col col-12 col-lg-4 py-2 text-center  text-white ">
+            ©2023 <a href=" index.html" class="bottomtag">fervour.com</a> All rights reserved.
+       </div>				                            
+    </div>
+    </div> 
+    </footer>	
+
+    
+                               
+    </div>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/navcarousel.js"></script>
+    
+
+    <!-- carousel -->
+<script>
+	$(document).ready(function () {
+	    $("#flow-carousel").owlCarousel({
+		   loop: true,
+		   margin: 12,
+		   nav:false,
+		   dots: true,
+		   autoplay: true,
+		   smartSpeed: 1000,
+		   autoplayTimeout: 2000,
+		   autoplayHoverPause: true,
+		   nav: false,
+		   responsive: {
+			  0: { items: 1 },
+			  600: { items: 2 },
+			  1000: { items: 4 }
+		   },
+		   onInitialized: function () {
+			  console.log("flow carousel initialized.");
+		   }
+	    });
+	});
+	</script>
+    
+    </body>
+    </html>
